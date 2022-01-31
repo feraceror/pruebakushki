@@ -1,0 +1,947 @@
+## Get transactions list
+
+#Request
+Method: GET
+Endpoint: https://api-uat.kushkipagos.com/analytics/v1/transactions-list?from=2022-01-29T00:00:00&to=2022-01-31T00:00:00
+Headers:{
+    Private-Merchant-Id: 3735c88242314d06855a7e91bdb05104
+}
+
+#Response
+{
+    "total": 9,
+    "data": [
+        {
+            "acquirer_bank": "Banco Boston",
+            "approval_code": null,
+            "approved_transaction_amount": 0,
+            "card_holder_name": "NA",
+            "card_type": "",
+            "contact_details": {
+                "document_number": "1009283738",
+                "document_type": "CC",
+                "email": "test@test.com",
+                "first_name": "Diego",
+                "last_name": "Cadena",
+                "phone_number": "+593988734644"
+            },
+            "country": "Colombia",
+            "created": "2022-01-30T22:30:41.000Z",
+            "credential_alias": "Technical Assessment Technical Support ",
+            "credential_id": "cca3d2695d0a414692310cc86acdfed3",
+            "currency_code": "USD",
+            "foreign_card": true,
+            "ice_value": 0,
+            "issuing_bank": null,
+            "iva_value": 0,
+            "last_four_digits": null,
+            "merchant_id": "20000000105958793000",
+            "merchant_name": "Technical Assessment Technical Support ",
+            "metadata": {
+                "contractID": "157AB"
+            },
+            "payment_brand": "",
+            "processor": {
+                "code": "566",
+                "message": "El token es invalido , o ya fue usado en otra transaccion."
+            },
+            "processor_id": "1000000984646752937316433160918",
+            "processor_name": "Credibanco Processor",
+            "processor_type": "gateway",
+            "public_credential_id": "c521b9fad0784c1681bbbcc9bc03a7aa",
+            "recap": null,
+            "request_amount": 16.98,
+            "response_code": "577",
+            "response_text": "El token de la transaccion no es valido",
+            "subtotal_iva": 0,
+            "subtotal_iva0": 16.98,
+            "sync_mode": "online",
+            "transaction_id": "1643581841800285520",
+            "transaction_status": "DECLINED",
+            "transaction_type": "SALE",
+            "payment_method": "card",
+            "masked_credit_card": "XXXXXXXXXXXXXXXX",
+            "security": {
+                "ip": null
+            },
+            "string_metadata": "{\"contractID\":\"157AB\"}",
+            "order_details": {
+                "shipping_details": {
+                    "country": "Ecuador",
+                    "zip_code": "170402",
+                    "address": "Eloy Alfaro 139 y Catalina Aldaz",
+                    "phone": "+593988734644",
+                    "city": "Quito",
+                    "name": "Diego Cadena",
+                    "region": "Pichincha"
+                },
+                "billing_details": {
+                    "country": "Ecuador",
+                    "zip_code": "170402",
+                    "address": "Eloy Alfaro 139 y Catalina Aldaz",
+                    "phone": "+593988734644",
+                    "city": "Quito",
+                    "name": "Diego Cadena",
+                    "region": "Pichincha"
+                },
+                "site_domain": "tuebook.com"
+            },
+            "product_details": {
+                "product": [
+                    {
+                        "quantity": 1,
+                        "price": 6990000,
+                        "id": "198952AB",
+                        "title": "eBook Digital Services",
+                        "sku": "10101042"
+                    },
+                    {
+                        "quantity": 1,
+                        "price": 9990000,
+                        "id": "198953AB",
+                        "title": "eBook Virtual Selling",
+                        "sku": "004834GQ"
+                    }
+                ]
+            }
+        },
+        {
+            "acquirer_bank": "Banco Boston",
+            "approval_code": "000000",
+            "approved_transaction_amount": 1290000,
+            "bin_card": "541236",
+            "card_holder_name": "Fernanda Acero",
+            "card_type": "Debit",
+            "contact_details": {
+                "document_number": "1090501755",
+                "document_type": "CC",
+                "email": "fernandacasrod@gmail.com",
+                "first_name": "Fernanda",
+                "last_name": "Acero",
+                "phone_number": "+573124569645"
+            },
+            "country": "Colombia",
+            "created": "2022-01-30T22:36:52.000Z",
+            "credential_alias": "Technical Assessment Technical Support ",
+            "credential_id": "cca3d2695d0a414692310cc86acdfed3",
+            "credit_type": null,
+            "currency_code": "COP",
+            "foreign_card": true,
+            "ice_value": 0,
+            "issuing_bank": "U.S. BANK NATIONAL ASSOCIATION, ND",
+            "iva_value": 0,
+            "last_four_digits": "5123",
+            "merchant_id": "20000000105958793000",
+            "merchant_name": "Technical Assessment Technical Support ",
+            "payment_brand": "Mastercard",
+            "processor_id": "1000000984646752937316433160918",
+            "processor_name": "Credibanco Processor",
+            "processor_type": "gateway",
+            "public_credential_id": "c521b9fad0784c1681bbbcc9bc03a7aa",
+            "request_amount": 1290000,
+            "response_code": "000",
+            "response_text": "Transaccion aprobada",
+            "subtotal_iva": 0,
+            "subtotal_iva0": 1290000,
+            "sync_mode": "online",
+            "ticket_number": "156967456027400350",
+            "transaction_id": "925374949738613360",
+            "transaction_reference": "4eecc08b-2934-48ff-8206-68df9aa087c6",
+            "transaction_status": "APPROVAL",
+            "transaction_type": "SALE",
+            "payment_method": "card",
+            "masked_credit_card": "541236XXXXXX5123",
+            "security": {
+                "ip": "186.113.77.201",
+                "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36",
+                "whitelist": false
+            },
+            "order_details": {
+                "shipping_details": {
+                    "country": "Colombia",
+                    "zip_code": "1001112",
+                    "address": "Calle 14 #1-64 apto 201 la Playa",
+                    "phone": "+573124569645",
+                    "city": "Bogota",
+                    "name": "Fernanda Acero",
+                    "region": "Meta"
+                },
+                "billing_details": {
+                    "country": "Colombia",
+                    "zip_code": "1001112",
+                    "address": "Calle 14 #1-64 apto 201 la Playa",
+                    "phone": "+573124569645",
+                    "city": "Bogota",
+                    "name": "Fernanda Acero",
+                    "region": "Meta"
+                },
+                "site_domain": "github.com"
+            },
+            "product_details": {
+                "product": [
+                    {
+                        "quantity": 1,
+                        "price": 835000,
+                        "id": "774411",
+                        "title": "Celular Samsung Galaxy M32 128GB",
+                        "sku": "10101042"
+                    },
+                    {
+                        "quantity": 1,
+                        "price": 220000,
+                        "id": "774412",
+                        "title": "Licuadora Oster Reversible de color Negro BRLY07-Z00",
+                        "sku": "10101523"
+                    },
+                    {
+                        "quantity": 1,
+                        "price": 130000,
+                        "id": "774413",
+                        "title": "Chaleco Mai Blanco Para Mujer Croydon",
+                        "sku": "10101785"
+                    },
+                    {
+                        "quantity": 2,
+                        "price": 105000,
+                        "id": "774414",
+                        "title": "Chaleco Mai Blanco Para Mujer Croydon",
+                        "sku": "10101785"
+                    }
+                ]
+            }
+        },
+        {
+            "acquirer_bank": "Banco Boston",
+            "approval_code": "000000",
+            "approved_transaction_amount": 1290000,
+            "bin_card": "556663",
+            "card_holder_name": "Fernanda Acero",
+            "card_type": "Credit",
+            "contact_details": {
+                "document_number": "23523543",
+                "document_type": "CC",
+                "email": "fernandacasrod@gmail.com",
+                "first_name": "Fernanda",
+                "last_name": "Acero",
+                "phone_number": "+573124569645"
+            },
+            "country": "Colombia",
+            "created": "2022-01-30T22:40:38.000Z",
+            "credential_alias": "Technical Assessment Technical Support ",
+            "credential_id": "cca3d2695d0a414692310cc86acdfed3",
+            "credit_type": null,
+            "currency_code": "COP",
+            "foreign_card": true,
+            "ice_value": 0,
+            "issuing_bank": "EUROCARD AB",
+            "iva_value": 0,
+            "last_four_digits": "4354",
+            "merchant_id": "20000000105958793000",
+            "merchant_name": "Technical Assessment Technical Support ",
+            "payment_brand": "Mastercard",
+            "processor_id": "1000000984646752937316433160918",
+            "processor_name": "Credibanco Processor",
+            "processor_type": "gateway",
+            "public_credential_id": "c521b9fad0784c1681bbbcc9bc03a7aa",
+            "request_amount": 1290000,
+            "response_code": "000",
+            "response_text": "Transaccion aprobada",
+            "subtotal_iva": 0,
+            "subtotal_iva0": 1290000,
+            "sync_mode": "online",
+            "ticket_number": "469673639551989926",
+            "transaction_id": "715021564831440046",
+            "transaction_reference": "a31a48e6-c539-40dc-8e7d-f0819c8872fa",
+            "transaction_status": "APPROVAL",
+            "transaction_type": "SALE",
+            "payment_method": "card",
+            "masked_credit_card": "556663XXXXXX4354",
+            "security": {
+                "ip": "186.113.77.201",
+                "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36",
+                "whitelist": false
+            },
+            "order_details": {
+                "shipping_details": {
+                    "country": "Colombia",
+                    "zip_code": "1001112",
+                    "address": "Calle 3 # 4-45",
+                    "phone": "+573124569645",
+                    "city": "Villavicencio",
+                    "name": "Fernanda Acero",
+                    "region": "Meta"
+                },
+                "billing_details": {
+                    "country": "Colombia",
+                    "zip_code": "1001112",
+                    "address": "Calle 3 # 4-45",
+                    "phone": "+573124569645",
+                    "city": "Villavicencio",
+                    "name": "Fernanda Acero",
+                    "region": "Meta"
+                },
+                "site_domain": "github.com"
+            },
+            "product_details": {
+                "product": [
+                    {
+                        "quantity": 1,
+                        "price": 835000,
+                        "id": "774411",
+                        "title": "Celular Samsung Galaxy M32 128GB",
+                        "sku": "10101042"
+                    },
+                    {
+                        "quantity": 1,
+                        "price": 220000,
+                        "id": "774412",
+                        "title": "Licuadora Oster Reversible de color Negro BRLY07-Z00",
+                        "sku": "10101523"
+                    },
+                    {
+                        "quantity": 1,
+                        "price": 130000,
+                        "id": "774413",
+                        "title": "Chaleco Mai Blanco Para Mujer Croydon",
+                        "sku": "10101785"
+                    },
+                    {
+                        "quantity": 2,
+                        "price": 105000,
+                        "id": "774414",
+                        "title": "Chaleco Mai Blanco Para Mujer Croydon",
+                        "sku": "10101785"
+                    }
+                ]
+            }
+        },
+        {
+            "acquirer_bank": "Banco Boston",
+            "approval_code": "000000",
+            "approved_transaction_amount": 1290000,
+            "bin_card": "541236",
+            "card_holder_name": "Fernanda Acero",
+            "card_type": "Debit",
+            "contact_details": {
+                "document_number": "1090501755",
+                "document_type": "CC",
+                "email": "fernandacasrod@gmail.com",
+                "first_name": "Fernanda",
+                "last_name": "Acero",
+                "phone_number": "+573143251213"
+            },
+            "country": "Colombia",
+            "created": "2022-01-31T00:25:40.000Z",
+            "credential_alias": "Technical Assessment Technical Support ",
+            "credential_id": "cca3d2695d0a414692310cc86acdfed3",
+            "credit_type": null,
+            "currency_code": "COP",
+            "foreign_card": true,
+            "ice_value": 0,
+            "issuing_bank": "U.S. BANK NATIONAL ASSOCIATION, ND",
+            "iva_value": 0,
+            "last_four_digits": "1233",
+            "merchant_id": "20000000105958793000",
+            "merchant_name": "Technical Assessment Technical Support ",
+            "payment_brand": "Mastercard",
+            "processor_id": "1000000984646752937316433160918",
+            "processor_name": "Credibanco Processor",
+            "processor_type": "gateway",
+            "public_credential_id": "c521b9fad0784c1681bbbcc9bc03a7aa",
+            "request_amount": 1290000,
+            "response_code": "000",
+            "response_text": "Transaccion aprobada",
+            "subtotal_iva": 0,
+            "subtotal_iva0": 1290000,
+            "sync_mode": "online",
+            "ticket_number": "879099997193906605",
+            "transaction_id": "510286230870055884",
+            "transaction_reference": "90079296-0ab7-4688-9a2f-7522d81ed561",
+            "transaction_status": "APPROVAL",
+            "transaction_type": "SALE",
+            "payment_method": "card",
+            "masked_credit_card": "541236XXXXXX1233",
+            "security": {
+                "ip": "186.113.77.201",
+                "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36",
+                "whitelist": false
+            },
+            "order_details": {
+                "shipping_details": {
+                    "country": "Colombia",
+                    "zip_code": "1001522",
+                    "address": "Calle 3 # 4-45",
+                    "phone": "+573143251213",
+                    "city": "Villavicencio",
+                    "name": "Fernanda Acero",
+                    "region": "Meta"
+                },
+                "billing_details": {
+                    "country": "Colombia",
+                    "zip_code": "1001522",
+                    "address": "Calle 3 # 4-45",
+                    "phone": "+573143251213",
+                    "city": "Villavicencio",
+                    "name": "Fernanda Acero",
+                    "region": "Meta"
+                },
+                "site_domain": "github.com"
+            },
+            "product_details": {
+                "product": [
+                    {
+                        "quantity": 1,
+                        "price": 835000,
+                        "id": "774411",
+                        "title": "Celular Samsung Galaxy M32 128GB",
+                        "sku": "10101042"
+                    },
+                    {
+                        "quantity": 1,
+                        "price": 220000,
+                        "id": "774412",
+                        "title": "Licuadora Oster Reversible de color Negro BRLY07-Z00",
+                        "sku": "10101523"
+                    },
+                    {
+                        "quantity": 1,
+                        "price": 130000,
+                        "id": "774413",
+                        "title": "Chaleco Mai Blanco Para Mujer Croydon",
+                        "sku": "10101785"
+                    },
+                    {
+                        "quantity": 2,
+                        "price": 105000,
+                        "id": "774414",
+                        "title": "Chaleco Mai Blanco Para Mujer Croydon",
+                        "sku": "10101785"
+                    }
+                ]
+            }
+        },
+        {
+            "acquirer_bank": "Banco Boston",
+            "approval_code": "000000",
+            "approved_transaction_amount": 1290000,
+            "bin_card": "541236",
+            "card_holder_name": "Fernanda Acero",
+            "card_type": "Debit",
+            "contact_details": {
+                "document_number": "1090501755",
+                "document_type": "CC",
+                "email": "fernandacasrod@gmail.com",
+                "first_name": "Fernanda",
+                "last_name": "Acero",
+                "phone_number": "+573143251213GGG"
+            },
+            "country": "Colombia",
+            "created": "2022-01-31T01:14:51.000Z",
+            "credential_alias": "Technical Assessment Technical Support ",
+            "credential_id": "cca3d2695d0a414692310cc86acdfed3",
+            "credit_type": null,
+            "currency_code": "COP",
+            "foreign_card": true,
+            "ice_value": 0,
+            "issuing_bank": "U.S. BANK NATIONAL ASSOCIATION, ND",
+            "iva_value": 0,
+            "last_four_digits": "1233",
+            "merchant_id": "20000000105958793000",
+            "merchant_name": "Technical Assessment Technical Support ",
+            "payment_brand": "Mastercard",
+            "processor_id": "1000000984646752937316433160918",
+            "processor_name": "Credibanco Processor",
+            "processor_type": "gateway",
+            "public_credential_id": "c521b9fad0784c1681bbbcc9bc03a7aa",
+            "request_amount": 1290000,
+            "response_code": "000",
+            "response_text": "Transaccion aprobada",
+            "subtotal_iva": 0,
+            "subtotal_iva0": 1290000,
+            "sync_mode": "online",
+            "ticket_number": "227708382344160911",
+            "transaction_id": "204492824797009685",
+            "transaction_reference": "48d9bf92-27a0-42b5-a713-5d352051cba6",
+            "transaction_status": "APPROVAL",
+            "transaction_type": "SALE",
+            "payment_method": "card",
+            "masked_credit_card": "541236XXXXXX1233",
+            "security": {
+                "ip": "186.113.77.201",
+                "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36",
+                "whitelist": false
+            },
+            "order_details": {
+                "shipping_details": {
+                    "country": "Colombia",
+                    "zip_code": "1001522",
+                    "address": "Calle 3 # 4-45",
+                    "phone": "+573143251213GGG",
+                    "city": "Villavicencio",
+                    "name": "Fernanda Acero",
+                    "region": "Meta"
+                },
+                "billing_details": {
+                    "country": "Colombia",
+                    "zip_code": "1001522",
+                    "address": "Calle 3 # 4-45",
+                    "phone": "+573143251213GGG",
+                    "city": "Villavicencio",
+                    "name": "Fernanda Acero",
+                    "region": "Meta"
+                },
+                "site_domain": "github.com"
+            },
+            "product_details": {
+                "product": [
+                    {
+                        "quantity": 1,
+                        "price": 835000,
+                        "id": "774411",
+                        "title": "Celular Samsung Galaxy M32 128GB",
+                        "sku": "10101042"
+                    },
+                    {
+                        "quantity": 1,
+                        "price": 220000,
+                        "id": "774412",
+                        "title": "Licuadora Oster Reversible de color Negro BRLY07-Z00",
+                        "sku": "10101523"
+                    },
+                    {
+                        "quantity": 1,
+                        "price": 130000,
+                        "id": "774413",
+                        "title": "Chaleco Mai Blanco Para Mujer Croydon",
+                        "sku": "10101785"
+                    },
+                    {
+                        "quantity": 2,
+                        "price": 105000,
+                        "id": "774414",
+                        "title": "Chaleco Mai Blanco Para Mujer Croydon",
+                        "sku": "10101785"
+                    }
+                ]
+            }
+        },
+        {
+            "acquirer_bank": "Banco Boston",
+            "approval_code": "000000",
+            "approved_transaction_amount": 1395000,
+            "bin_card": "541236",
+            "card_holder_name": "Fernanda Acero",
+            "card_type": "Debit",
+            "contact_details": {
+                "document_number": "4411223",
+                "document_type": "CC",
+                "email": "fernandacasrod@gmail.com",
+                "first_name": "Fernanda",
+                "last_name": "Acero",
+                "phone_number": "+573143251213"
+            },
+            "country": "Colombia",
+            "created": "2022-01-31T01:44:36.000Z",
+            "credential_alias": "Technical Assessment Technical Support ",
+            "credential_id": "cca3d2695d0a414692310cc86acdfed3",
+            "credit_type": null,
+            "currency_code": "COP",
+            "foreign_card": true,
+            "ice_value": 0,
+            "issuing_bank": "U.S. BANK NATIONAL ASSOCIATION, ND",
+            "iva_value": 0,
+            "last_four_digits": "5123",
+            "merchant_id": "20000000105958793000",
+            "merchant_name": "Technical Assessment Technical Support ",
+            "payment_brand": "Mastercard",
+            "processor_id": "1000000984646752937316433160918",
+            "processor_name": "Credibanco Processor",
+            "processor_type": "gateway",
+            "public_credential_id": "c521b9fad0784c1681bbbcc9bc03a7aa",
+            "request_amount": 1395000,
+            "response_code": "000",
+            "response_text": "Transaccion aprobada",
+            "subtotal_iva": 0,
+            "subtotal_iva0": 1395000,
+            "sync_mode": "online",
+            "ticket_number": "269406910848072892",
+            "transaction_id": "020495774783280049",
+            "transaction_reference": "f138e473-721b-4405-b267-4b0c64874ed4",
+            "transaction_status": "APPROVAL",
+            "transaction_type": "SALE",
+            "payment_method": "card",
+            "masked_credit_card": "541236XXXXXX5123",
+            "security": {
+                "ip": "186.113.77.201",
+                "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36",
+                "whitelist": false
+            },
+            "order_details": {
+                "shipping_details": {
+                    "country": "Colombia",
+                    "zip_code": "1001112",
+                    "address": "Calle 3 # 4-45",
+                    "phone": "+573143251213",
+                    "city": "Villavicencio",
+                    "name": "Fernanda Acero",
+                    "region": "Meta"
+                },
+                "billing_details": {
+                    "country": "Colombia",
+                    "zip_code": "1001112",
+                    "address": "Calle 3 # 4-45",
+                    "phone": "+573143251213",
+                    "city": "Villavicencio",
+                    "name": "Fernanda Acero",
+                    "region": "Meta"
+                },
+                "site_domain": "github.com"
+            },
+            "product_details": {
+                "product": [
+                    {
+                        "quantity": 1,
+                        "price": 835000,
+                        "id": "774411",
+                        "title": "Celular Samsung Galaxy M32 128GB",
+                        "sku": "10101042"
+                    },
+                    {
+                        "quantity": 1,
+                        "price": 220000,
+                        "id": "774412",
+                        "title": "Licuadora Oster Reversible de color Negro BRLY07-Z00",
+                        "sku": "10101523"
+                    },
+                    {
+                        "quantity": 1,
+                        "price": 130000,
+                        "id": "774413",
+                        "title": "Chaleco Mai Blanco Para Mujer Croydon",
+                        "sku": "10101785"
+                    },
+                    {
+                        "quantity": 2,
+                        "price": 105000,
+                        "id": "774414",
+                        "title": "Chaleco Mai Blanco Para Mujer Croydon",
+                        "sku": "10101785"
+                    }
+                ]
+            }
+        },
+        {
+            "acquirer_bank": "Banco Boston",
+            "approval_code": null,
+            "approved_transaction_amount": 0,
+            "card_holder_name": "NA",
+            "card_type": "",
+            "contact_details": {
+                "document_number": "1090501755",
+                "document_type": "CC",
+                "email": "fernandacasrod@gmail.com",
+                "first_name": "Fernanda",
+                "last_name": "Acero",
+                "phone_number": "+573124569645"
+            },
+            "country": "Colombia",
+            "created": "2022-01-31T01:51:38.000Z",
+            "credential_alias": "Technical Assessment Technical Support ",
+            "credential_id": "cca3d2695d0a414692310cc86acdfed3",
+            "currency_code": "COP",
+            "foreign_card": true,
+            "ice_value": 0,
+            "issuing_bank": null,
+            "iva_value": 0,
+            "last_four_digits": null,
+            "merchant_id": "20000000105958793000",
+            "merchant_name": "Technical Assessment Technical Support ",
+            "payment_brand": "",
+            "processor": {
+                "code": "566",
+                "message": "El token es invalido , o ya fue usado en otra transaccion."
+            },
+            "processor_id": "1000000984646752937316433160918",
+            "processor_name": "Credibanco Processor",
+            "processor_type": "gateway",
+            "public_credential_id": "c521b9fad0784c1681bbbcc9bc03a7aa",
+            "recap": null,
+            "request_amount": 1395000,
+            "response_code": "577",
+            "response_text": "El token de la transaccion no es valido",
+            "subtotal_iva": 0,
+            "subtotal_iva0": 1395000,
+            "sync_mode": "online",
+            "transaction_id": "1643593898264283109",
+            "transaction_status": "DECLINED",
+            "transaction_type": "SALE",
+            "payment_method": "card",
+            "masked_credit_card": "XXXXXXXXXXXXXXXX",
+            "security": {
+                "ip": null
+            },
+            "order_details": {
+                "shipping_details": {
+                    "country": "Colombia",
+                    "zip_code": "1001112",
+                    "address": "Calle 3 # 4-45",
+                    "phone": "+573124569645",
+                    "city": "Villavicencio",
+                    "name": "Fernanda Acero",
+                    "region": "Meta"
+                },
+                "billing_details": {
+                    "country": "Colombia",
+                    "zip_code": "1001112",
+                    "address": "Calle 3 # 4-45",
+                    "phone": "+573124569645",
+                    "city": "Villavicencio",
+                    "name": "Fernanda Acero",
+                    "region": "Meta"
+                },
+                "site_domain": "github.com"
+            },
+            "product_details": {
+                "product": [
+                    {
+                        "quantity": 1,
+                        "price": 835000,
+                        "id": "774411",
+                        "title": "Celular Samsung Galaxy M32 128GB",
+                        "sku": "10101042"
+                    },
+                    {
+                        "quantity": 1,
+                        "price": 220000,
+                        "id": "774412",
+                        "title": "Licuadora Oster Reversible de color Negro BRLY07-Z00",
+                        "sku": "10101523"
+                    },
+                    {
+                        "quantity": 1,
+                        "price": 130000,
+                        "id": "774413",
+                        "title": "Chaleco Mai Blanco Para Mujer Croydon",
+                        "sku": "10101785"
+                    },
+                    {
+                        "quantity": 2,
+                        "price": 105000,
+                        "id": "774414",
+                        "title": "Chaleco Mai Blanco Para Mujer Croydon",
+                        "sku": "10101785"
+                    }
+                ]
+            }
+        },
+        {
+            "acquirer_bank": "Banco Boston",
+            "approval_code": null,
+            "approved_transaction_amount": 0,
+            "card_holder_name": "NA",
+            "card_type": "",
+            "contact_details": {
+                "document_number": "4411223",
+                "document_type": "CC",
+                "email": "fernandacasrod@gmail.com",
+                "first_name": "Fernanda",
+                "last_name": "Acero",
+                "phone_number": "+573124569645"
+            },
+            "country": "Colombia",
+            "created": "2022-01-31T01:56:36.000Z",
+            "credential_alias": "Technical Assessment Technical Support ",
+            "credential_id": "cca3d2695d0a414692310cc86acdfed3",
+            "currency_code": "COP",
+            "foreign_card": true,
+            "ice_value": 0,
+            "issuing_bank": null,
+            "iva_value": 0,
+            "last_four_digits": null,
+            "merchant_id": "20000000105958793000",
+            "merchant_name": "Technical Assessment Technical Support ",
+            "payment_brand": "",
+            "processor": {
+                "code": "566",
+                "message": "El token es invalido , o ya fue usado en otra transaccion."
+            },
+            "processor_id": "1000000984646752937316433160918",
+            "processor_name": "Credibanco Processor",
+            "processor_type": "gateway",
+            "public_credential_id": "c521b9fad0784c1681bbbcc9bc03a7aa",
+            "recap": null,
+            "request_amount": 1395000,
+            "response_code": "577",
+            "response_text": "El token de la transaccion no es valido",
+            "subtotal_iva": 0,
+            "subtotal_iva0": 1395000,
+            "sync_mode": "online",
+            "transaction_id": "1643594195982869149",
+            "transaction_status": "DECLINED",
+            "transaction_type": "SALE",
+            "payment_method": "card",
+            "masked_credit_card": "XXXXXXXXXXXXXXXX",
+            "security": {
+                "ip": null
+            },
+            "order_details": {
+                "shipping_details": {
+                    "country": "Colombia",
+                    "zip_code": "1001112",
+                    "address": "Calle 3 # 4-45",
+                    "phone": "+573124569645",
+                    "city": "Villavicencio",
+                    "name": "Fernanda Acero",
+                    "region": "Meta"
+                },
+                "billing_details": {
+                    "country": "Colombia",
+                    "zip_code": "1001112",
+                    "address": "Calle 3 # 4-45",
+                    "phone": "+573124569645",
+                    "city": "Villavicencio",
+                    "name": "Fernanda Acero",
+                    "region": "Meta"
+                },
+                "site_domain": "github.com"
+            },
+            "product_details": {
+                "product": [
+                    {
+                        "quantity": 1,
+                        "price": 835000,
+                        "id": "774411",
+                        "title": "Celular Samsung Galaxy M32 128GB",
+                        "sku": "10101042"
+                    },
+                    {
+                        "quantity": 1,
+                        "price": 220000,
+                        "id": "774412",
+                        "title": "Licuadora Oster Reversible de color Negro BRLY07-Z00",
+                        "sku": "10101523"
+                    },
+                    {
+                        "quantity": 1,
+                        "price": 130000,
+                        "id": "774413",
+                        "title": "Chaleco Mai Blanco Para Mujer Croydon",
+                        "sku": "10101785"
+                    },
+                    {
+                        "quantity": 2,
+                        "price": 105000,
+                        "id": "774414",
+                        "title": "Chaleco Mai Blanco Para Mujer Croydon",
+                        "sku": "10101785"
+                    }
+                ]
+            }
+        },
+        {
+            "acquirer_bank": "Banco Boston",
+            "approval_code": "000000",
+            "approved_transaction_amount": 1395000,
+            "bin_card": "541236",
+            "card_holder_name": "Fernanda Acero",
+            "card_type": "Debit",
+            "contact_details": {
+                "document_number": "4411223",
+                "document_type": "CC",
+                "email": "fernandacasrod@gmail.com",
+                "first_name": "Fernanda",
+                "last_name": "Acero",
+                "phone_number": "+573124569645"
+            },
+            "country": "Colombia",
+            "created": "2022-01-31T01:59:52.000Z",
+            "credential_alias": "Technical Assessment Technical Support ",
+            "credential_id": "cca3d2695d0a414692310cc86acdfed3",
+            "credit_type": null,
+            "currency_code": "COP",
+            "foreign_card": true,
+            "ice_value": 0,
+            "issuing_bank": "U.S. BANK NATIONAL ASSOCIATION, ND",
+            "iva_value": 0,
+            "last_four_digits": "5123",
+            "merchant_id": "20000000105958793000",
+            "merchant_name": "Technical Assessment Technical Support ",
+            "payment_brand": "Mastercard",
+            "processor_id": "1000000984646752937316433160918",
+            "processor_name": "Credibanco Processor",
+            "processor_type": "gateway",
+            "public_credential_id": "c521b9fad0784c1681bbbcc9bc03a7aa",
+            "request_amount": 1395000,
+            "response_code": "000",
+            "response_text": "Transaccion aprobada",
+            "subtotal_iva": 0,
+            "subtotal_iva0": 1395000,
+            "sync_mode": "online",
+            "ticket_number": "358557710276243829",
+            "transaction_id": "482264805084238746",
+            "transaction_reference": "25f0cffc-c9c4-441e-a420-083d655ea891",
+            "transaction_status": "APPROVAL",
+            "transaction_type": "SALE",
+            "payment_method": "card",
+            "masked_credit_card": "541236XXXXXX5123",
+            "security": {
+                "ip": "186.113.77.201",
+                "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36",
+                "whitelist": false
+            },
+            "order_details": {
+                "shipping_details": {
+                    "country": "Colombia",
+                    "zip_code": "1001112",
+                    "address": "Calle 3 # 4-45",
+                    "phone": "+573124569645",
+                    "city": "Villavicencio",
+                    "name": "Fernanda Acero",
+                    "region": "Meta"
+                },
+                "billing_details": {
+                    "country": "Colombia",
+                    "zip_code": "1001112",
+                    "address": "Calle 3 # 4-45",
+                    "phone": "+573124569645",
+                    "city": "Villavicencio",
+                    "name": "Fernanda Acero",
+                    "region": "Meta"
+                },
+                "site_domain": "github.com"
+            },
+            "product_details": {
+                "product": [
+                    {
+                        "quantity": 1,
+                        "price": 835000,
+                        "id": "774411",
+                        "title": "Celular Samsung Galaxy M32 128GB",
+                        "sku": "10101042"
+                    },
+                    {
+                        "quantity": 1,
+                        "price": 220000,
+                        "id": "774412",
+                        "title": "Licuadora Oster Reversible de color Negro BRLY07-Z00",
+                        "sku": "10101523"
+                    },
+                    {
+                        "quantity": 1,
+                        "price": 130000,
+                        "id": "774413",
+                        "title": "Chaleco Mai Blanco Para Mujer Croydon",
+                        "sku": "10101785"
+                    },
+                    {
+                        "quantity": 2,
+                        "price": 105000,
+                        "id": "774414",
+                        "title": "Chaleco Mai Blanco Para Mujer Croydon",
+                        "sku": "10101785"
+                    }
+                ]
+            }
+        }
+    ]
+}

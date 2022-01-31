@@ -1,0 +1,14 @@
+## Void a transaction
+
+#Request
+Method: DELETE
+Endpoint: https://api-uat.kushkipagos.com/v1/charges/156967456027400350
+Headers:{
+    Private-Merchant-Id: 3735c88242314d06855a7e91bdb05104
+}
+
+#Response
+{
+    "ticketNumber": "661643595361583289",
+    "transactionReference": "ce615984-2c73-4af4-ace2-b5148c06dc76"
+}

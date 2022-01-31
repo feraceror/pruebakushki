@@ -1,0 +1,88 @@
+<html>
+    <header>
+        <title>Prueba Kushki</title>        
+        <script src="https://cdn.kushkipagos.com/kushki.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="./script.js"></script>
+        <link href="./style.css" rel="stylesheet" type="text/css">
+        <img height="150px" src="./logo/logoCompleto.png" />
+    </header>
+    <body>
+        <div class="container">
+            <div class="container-element">
+                <form onsubmit="return onSubmit(event)" class="form">
+                    <h2>Datos de contacto</h2>
+                    <label for="tipodocumento">Tipo de documento:</label>
+                    <select id="documenttype" name="tipodocumento">
+                        <option value="CC">Cedula</option>
+                        <option value="TI">Tarjeta de identidad</option>
+                        <option value="NIT">NIT</option>
+                        <option value="CE">Cedula de extranjeria</option>
+                        <option value="PP">Pasaporte</option>
+                    </select>
+
+                    <label for="documento">Documento:</label>
+                    <input onchange="validateDocument()" id="document" required type="text" name="documento" placeholder="Ingrese el numero de documento"/>
+
+                    <label for="correo">Correo:</label>
+                    <input onchange="validateEmail()" id="email" required type="text" name="correo" placeholder="Ingrese el numero de correo"/>
+
+                    <label for="nombre">Nombre:</label>
+                    <input onchange="validateName('nameContact')" id="nameContact" required type="text" name="nombre" placeholder="Ingrese el nombre"/>
+
+                    <label for="apellido">Apellido:</label>
+                    <input onchange="validateName('lastname')" id="lastname" required type="text" name="apellido" placeholder="Ingrese el apellido"/>
+                    
+                    <label for="celular">Celular (agregar codigo ej: +57):</label>
+                    <input onchange="validatePhone()" id="phone" required type="text" name="celular" placeholder="Ingrese el numero de celular"/>
+
+                    <label for="pais">Pais:</label>
+                    <input onchange="validateName('country')" id="country" required type="text" name="pais" placeholder="Ingrese el pais"/>
+
+                    <label for="departamento/region">Departamento/Region:</label>
+                    <input onchange="validateName('region')" id="region" required type="text" name="departamento/region" placeholder="Ingrese el departamento/region"/>
+
+                    <label for="ciudad">Ciudad:</label>
+                    <input onchange="validateName('city')" id="city" required type="text" name="ciudad" placeholder="Ingrese la ciudad"/>
+                    
+                    <label for="direccion">Direccion:</label>
+                    <input id="address" required type="text" name="direccion" placeholder="Ingrese la direccion"/>
+
+                    <label for="codigo postal">Codigo postal:</label>
+                    <input onchange="validateZipCode()" id="zipcode" required type="text" name="codigo postal" placeholder="Ingrese el codigo postal"/>
+                    
+                    <h2>Datos de tarjeta</h2>
+                    <label for="nombre">Nombre:</label>
+                    <input onchange="validateName('nameCard')" id="nameCard" required type="text" name="nombre" placeholder="Ingrese el nombre"/>
+                    <label for="numero">Numero de tarjeta:</label>
+                    <input onchange="validateCard()" id="cardNumber" required type="text" name="numero" placeholder="Ingrese el numero de tarjeta"/>
+                    <label for="cv">Codigo CV:</label>
+                    <input onchange="validateCV()" required type="password" id="cv" name="cv" placeholder="Ingrese CV" class="cv"/>
+                    <label for="mes">Fecha de vencimiento:</label>
+                    <div class="expiry-date">
+                        <input onchange="validateExpiryDate('year')" required type="text" id="year" placeholder="AA" class="expiry-date-field"/>
+                        <input onchange="validateExpiryDate('month')" required type="text" id="month" placeholder="MM" class="expiry-date-field"/>
+                    </div>
+                    <label for="monto">Monto a pagar:</label>
+                    <input required min="0" type="text" name="monto" id="monto" disabled/>
+                    <div class="center">
+                        <input class="button" type="submit" id="enviar" value="Enviar" />
+                    </div>
+                </form>
+                
+            </div>
+            <div class="container-car">
+                <h2>Carrito de compras</h2>
+                <div id="productos">
+                </div>
+            </div>
+        </div>
+        <footer>
+            <img height="150px" src="./logo/logoCompleto.png" />
+        </footer>
+        <script type="text/javascript">
+            renderProducts();
+        </script>
+        
+    </body>
+</html>
