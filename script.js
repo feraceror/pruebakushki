@@ -26,9 +26,9 @@ const productos = [
     },
     {
         "id": "774414",
-        "title": "Chaleco Mai Blanco Para Mujer Croydon",
+        "title": "Leggins para mujer",
         "price": 105000,
-        "sku": "10101785",
+        "sku": "10101740",
         "quantity": 2,
     },
   ];
