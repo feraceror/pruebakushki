@@ -1,5 +1,5 @@
-const privateKey = '3735c88242314d06855a7e91bdb05104';
-const publicKey = 'c521b9fad0784c1681bbbcc9bc03a7aa';
+const privateKey = 'f6fe53d1d4a74e6db0a22f55ec62fb11';
+const publicKey = '061a2cf29598446884cc1ed3a2644363';
 
 var montoTotal = 0;
 const productos = [
