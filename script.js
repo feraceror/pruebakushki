@@ -1,5 +1,6 @@
-const privateKey = 'f6fe53d1d4a74e6db0a22f55ec62fb11';
-const publicKey = '061a2cf29598446884cc1ed3a2644363';
+const privateKey = '6000000000157531860008831797149';
+const publicKey = '6000000000157531860008899208703';
+const currency = 'COP';
 
 var montoTotal = 0;
 const productos = [
@@ -49,7 +50,7 @@ const productos = [
                             <h3 class="product-title">${producto.title}</h3>
                             <span><strong>Sku:</strong> ${producto.sku}</span>
                             <span><strong>Cantidad:</strong> ${producto.quantity}</span>
-                            <span><strong>Precio: </strong>COP ${producto.price.toLocaleString()}</span>
+                            <span><strong>Precio: </strong>${currency} ${producto.price.toLocaleString()}</span>
                         </div>
                     </div>`
       });
@@ -284,7 +285,7 @@ function onSubmit(e) {
     
         const tokenPayload = {
             amount: montoTotal,
-            currency: "COP",
+            currency: currency,
             card: {
                 name: nombreTarjeta,
                 number: numeroTarjeta,
